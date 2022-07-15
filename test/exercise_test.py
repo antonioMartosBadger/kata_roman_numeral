@@ -29,3 +29,8 @@ class TestExercise(unittest.TestCase):
         result = convert(5)
 
         self.assertEqual('V', result)
+
+    def test_given_the_number_6_when_converting_to_roman_then_VI_is_returned(self):
+        result = convert(6)
+
+        self.assertEqual('VI', result)
