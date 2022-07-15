@@ -13,6 +13,6 @@ def convert(number: int) -> str:
 def calculate_conversion(number: int) -> str:
     if number == 4:
         return 'IV'
-    elif number == 6:
-        return 'VI'
+    elif number > 5:
+        return 'V' + 'I'*(number-5)
     return 'I'*number

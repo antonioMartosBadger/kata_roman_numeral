@@ -34,3 +34,13 @@ class TestExercise(unittest.TestCase):
         result = convert(6)
 
         self.assertEqual('VI', result)
+
+    def test_given_the_number_7_when_converting_to_roman_then_VII_is_returned(self):
+        result = convert(7)
+
+        self.assertEqual('VII', result)
+
+    def test_given_the_number_8_when_converting_to_roman_then_VIII_is_returned(self):
+        result = convert(8)
+
+        self.assertEqual('VIII', result)
