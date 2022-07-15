@@ -1,7 +1,8 @@
 
 UNIQUE_VALUES = {
-    1: 'I',
-    5: 'V'
+    4: 'IV',
+    5: 'V',
+    9: 'IX',
 }
 
 def convert(number: int) -> str:
@@ -11,8 +12,6 @@ def convert(number: int) -> str:
         return calculate_conversion(number)
         
 def calculate_conversion(number: int) -> str:
-    if number == 4:
-        return 'IV'
-    elif number > 5:
+    if number > 5:
         return 'V' + 'I'*(number-5)
     return 'I'*number
