@@ -13,6 +13,8 @@ def convert(number: int) -> str:
         return calculate_conversion(number)
         
 def calculate_conversion(number: int) -> str:
+    if number > 10:
+        return 'X' + 'I' * (number - 10)
     if number > 5:
         return 'V' + 'I'*(number-5)
     return 'I'*number
