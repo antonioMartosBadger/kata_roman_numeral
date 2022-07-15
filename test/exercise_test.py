@@ -19,3 +19,8 @@ class TestExercise(unittest.TestCase):
         result = convert(5)
 
         self.assertEqual('V', result)
+
+    def test_given_the_number_4_when_converting_to_roman_then_IV_is_returned(self):
+        result = convert(4)
+
+        self.assertEqual('IV', result)
