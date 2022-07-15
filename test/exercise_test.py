@@ -15,12 +15,17 @@ class TestExercise(unittest.TestCase):
 
         self.assertEqual('II', result)
 
-    def test_given_the_number_5_when_converting_to_roman_then_V_is_returned(self):
-        result = convert(5)
+    def test_given_the_number_3_when_converting_to_roman_then_III_is_returned(self):
+        result = convert(3)
 
-        self.assertEqual('V', result)
+        self.assertEqual('III', result)
 
     def test_given_the_number_4_when_converting_to_roman_then_IV_is_returned(self):
         result = convert(4)
 
         self.assertEqual('IV', result)
+
+    def test_given_the_number_5_when_converting_to_roman_then_V_is_returned(self):
+        result = convert(5)
+
+        self.assertEqual('V', result)
